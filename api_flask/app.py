@@ -4,7 +4,7 @@ import pickle
 import os
 
 app = Flask(__name__)
-modelo = pickle.load(open('modelo.pkl','rb'))
+modelo = pickle.load(open('../scripts/modelo.pkl','rb'))
 
 @app.route("/")
 def api_online():
